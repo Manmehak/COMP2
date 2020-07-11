@@ -31,9 +31,16 @@ public class Person {
 	
 	//Adding Constructor
 	public Person(int age) {
-		this._age = age;
+		this._initialise(age, "Unknown", "Unknown");
 		
 	}
+	//Adding private method 
+	private void _initialise(int age , String name , String gender) {
+		this.setName(name);
+		this.setGender(gender);
+		this._age = age;
+	}
+	
 	//Adding public method 
 	public void runs() {
 		System.out.printf("%s runs\n" , this.getName());
