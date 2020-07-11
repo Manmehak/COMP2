@@ -7,8 +7,9 @@ public class Program {
         person = new Person(18);
         person.setGender("Male");
         person.setName("Manmehak");
-        System.out.println("" + person.getName()+ " " + person.getGender());
+        System.out.println( person.getName() + " gender is " + person.getGender());
         person.runs();
+        System.out.printf("%s is %d ",person.getName(), person.getAge());
 	}
 
 }
